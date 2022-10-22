@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: auto;
+    background-color: black;
+}
+
+.wclock {
+    background-color: turquoise;
+}
+
+nav {
+    background-color: rgb(113, 212, 212);
+    height: 50px;
+    /* text-align: center; */
+}
+
+/* nav,li{
+    /* text-align: center; 
+}*/
+
+#title {
+    list-style: none;
+    font-size: 25px;
+    margin-left: 600px;
+    margin-top: 10px;
+    /* text-align: center; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+#clock {
+    background-color: turquoise;
+    height: 38vh;
+    width: 72vw;
+    margin-left: 15vw;
+    text-align: center;
+    margin-top: 0px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15vw;
+    text-align: center;
+    /* transform: matrix3d(23,54,5); */
+}
+
+#ddate {
+    background-color: turquoise;
+    width: 50vw;
+    height: 19vw;
+    text-align: center;
+    margin-left: 23vw;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4vw;
+    text-align: center;
+    color: rgba(65, 27, 27, 0.726);
+    /* margin-top: 5px; */
+}
+
+#tclock {
+    width: 160vh;
+    background-color: turquoise;
+}
+
+#ampm {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 60px;
+}
+
+nav img {
+    width: 4vw;
+    height: 4vw;
+    padding: 0.8vw;
+    border-radius: 45px;
+    /* border: 1px solid gray; */
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(131, 102, 102);
+    width: auto;
+    height: 4vw;
+}
+
+ul {
+    display: flex;
+    /* padding: 30px; */
+    list-style: none;
+    /* margin-left: 20px; */
+}
+
+nav ul li {
+    padding: 0.7vw;
+    margin: 0.8vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}

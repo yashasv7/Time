@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+nav img {
+    width: 2vw;
+    height: 2vw;
+    padding: 0.8vw;
+    border-radius: 45px;
+    /* border: 1px solid gray; */
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(131, 102, 102);
+    width: auto;
+    height: 4vw;
+}
+
+ul {
+    display: flex;
+    /* padding: 30px; */
+    list-style: none;
+    /* margin-left: 20px; */
+}
+
+nav ul li {
+    padding: 0.7vw;
+    margin: 0.8vw;
+    font-size: 1.5vw;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+    color: white;
+}
+
+.display {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#time {
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28vw;
+    width: 80vw;
+    /* background-color: yellow; */
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 15vw;
+
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: slateblue;
+    border: none;
+    padding: 1vw;
+    font-size: 1.3vw;
+    width: 6vw;
+    height: auto;
+    border-radius: 2.5vw;
+    margin: 1vw 2vw;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn:hover {
+    background-color: turquoise;
+    color: blueviolet;
+    cursor: pointer;
+}
+
