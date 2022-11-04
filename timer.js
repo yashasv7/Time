@@ -3,46 +3,54 @@ let stop = document.querySelector("#stop")
 let start = document.querySelector("#start")
 let reset = document.querySelector("#reset")
 let timeset = document.querySelector("#settime")
-
+let audio = new Audio("audio//as.mp3")
 let stime;
-// let ttime;
+let noti;
 let winter
-time.innerHTML = 0
+Notification.requestPermission().then(() => {
 
-timeset.addEventListener('click', () => {
-    stime = prompt("Set The Timer(in integers):")
-    // winter = setInterval(() => {
-    //     stime = stime - 1
-    //     console.log(stime)
-    //     if (stime==0) {
-    //         clearInterval(winter)
-    //         time.innerHTML = stime
-    //     }
-    // }, 1000)
+
+    time.innerHTML = 0
+
+
+    timeset.addEventListener('click', () => {
+        stime = prompt("Set The Timer(in integers):")
         time.innerHTML = stime
-})
+    })
 
+    // let noti;
 
-stop.addEventListener("click",()=>{
-    
-    clearInterval(winter)
-})
+    stop.addEventListener("click", () => {
 
-start.addEventListener('click',()=>{
-    winter = setInterval(() => {
-        stime = stime - 1
-        console.log(stime)
-        if (stime<=0) {
-            clearInterval(winter)
-            stime = 0
+        clearInterval(winter)
+    })
+
+    start.addEventListener('click', () => {
+
+        winter = setInterval(() => {
+            stime = stime - 1
+            if (stime <= 0) {
+
+                noti = new Notification("Timer Notification", {
+                    body: "Time is Over!"
+
+                })
+                audio.play()
+                setTimeout(() => {
+                    noti.close()
+                }, 8000);
+                clearInterval(winter)
+                stime = 0
+                time.innerHTML = stime
+            }
             time.innerHTML = stime
-        }
-        time.innerHTML = stime
-    }, 1000)
-})
+        }, 1000)
+    })
 
-reset.addEventListener("click",()=>{
-    stime = 0
-    time.innerHTML = stime
-    clearInterval(winter)
+    reset.addEventListener("click", () => {
+        stime = 0
+        time.innerHTML = stime
+        clearInterval(winter)
+    })
+
 })
